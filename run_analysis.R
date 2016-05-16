@@ -50,5 +50,3 @@ average <- ddply(cdata, .(subject, activity), function(x) colMeans(x[1:66]))
 View(average) #look at data set
 write.table(average, "./final/average_tidy.txt", row.names=FALSE) #write new data set
 
-#make code book and README file
-#put on github
